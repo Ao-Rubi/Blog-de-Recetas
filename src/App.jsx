@@ -8,6 +8,7 @@ import AdministrarRecetas from './components/Views/recetas/AdministrarRecetas';
 import Error404 from "./components/Views/Error404"
 import CrearReceta from "./components/Views/recetas/CrearReceta"
 import EditarReceta from './components/Views/recetas/EditarReceta';
+import DetalleRecetas from './components/Views/recetas/DetalleRecetas';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/administrar" element={<AdministrarRecetas></AdministrarRecetas>}></Route>
           <Route exact path="/administrar/crear" element={<CrearReceta></CrearReceta>}></Route>
           <Route exact path="/administrar/editar/:id" element={<EditarReceta></EditarReceta>}></Route>
+          <Route exact path="/detalles/:id" element={<DetalleRecetas></DetalleRecetas>}></Route>
 
           <Route path="*" element={<Error404></Error404>}></Route>
         </Routes>
